@@ -1,0 +1,2558 @@
+{
+    "info": {
+        "name": "TestApp",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "variable": [
+        {
+            "key": "host",
+            "value": "http://localhost",
+            "type": "string"
+        }
+    ],
+    "item": [
+        {
+            "name": "Admin",
+            "item": [
+                {
+                    "name": "Company",
+                    "item": [
+                        {
+                            "name": "Company",
+                            "item": [
+                                {
+                                    "name": "Delete Test",
+                                    "request": {
+                                        "method": "DELETE",
+                                        "body": {
+                                            "mode": "none"
+                                        },
+                                        "description": ""
+                                    },
+                                    "response": [
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Delete success",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9999"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"message\": \"Success\"\n}",
+                                            "originalRequest": {
+                                                "method": "DELETE",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/admin/company/companies/2",
+                                                    "path": [
+                                                        "admin",
+                                                        "company",
+                                                        "companies",
+                                                        "2"
+                                                    ],
+                                                    "query": []
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Restore success",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9998"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"message\": \"Success\"\n}",
+                                            "originalRequest": {
+                                                "method": "DELETE",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/admin/company/companies/2/restore",
+                                                    "path": [
+                                                        "admin",
+                                                        "company",
+                                                        "companies",
+                                                        "2",
+                                                        "restore"
+                                                    ],
+                                                    "query": []
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Index Test",
+                                    "request": {
+                                        "method": "GET",
+                                        "body": {
+                                            "mode": "none"
+                                        },
+                                        "description": ""
+                                    },
+                                    "response": [
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Filters",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9997"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"data\": [],\n    \"links\": {\n        \"first\": \"http://localhost/admin/company/companies?page=1\",\n        \"last\": \"http://localhost/admin/company/companies?page=1\",\n        \"prev\": null,\n        \"next\": null\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": null,\n        \"last_page\": 1,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost/admin/company/companies?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://localhost/admin/company/companies\",\n        \"per_page\": 20,\n        \"to\": null,\n        \"total\": 0\n    }\n}",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/admin/company/companies?filter%5Bname%5D=com&filter%5Baddress%5D=test&filter%5Bdirector_id%5D=1&filter%5Bwebsite%5D=test&filter%5Bsearch%5D=company",
+                                                    "path": [
+                                                        "admin",
+                                                        "company",
+                                                        "companies"
+                                                    ],
+                                                    "query": {
+                                                        "filter[name]": {
+                                                            "key": "filter[name]",
+                                                            "value": "com"
+                                                        },
+                                                        "filter[address]": {
+                                                            "key": "filter[address]",
+                                                            "value": "test"
+                                                        },
+                                                        "filter[director_id]": {
+                                                            "key": "filter[director_id]",
+                                                            "value": "1"
+                                                        },
+                                                        "filter[website]": {
+                                                            "key": "filter[website]",
+                                                            "value": "test"
+                                                        },
+                                                        "filter[search]": {
+                                                            "key": "filter[search]",
+                                                            "value": "company"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Available relations",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9996"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Company A\",\n            \"director_id\": 2,\n            \"address\": \"123 Main St\",\n            \"website\": \"www.companya.com\",\n            \"phone_number\": \"998993397707\",\n            \"created_at\": \"2025-04-16 12:46:02\",\n            \"updated_at\": \"2025-04-16 12:46:02\",\n            \"is_deleted\": false,\n            \"director\": {\n                \"id\": 2,\n                \"email\": \"company1@local.host\",\n                \"type\": \"company\",\n                \"created_at\": \"2025-04-16 12:46:02\",\n                \"updated_at\": \"2025-04-16 12:46:02\",\n                \"is_deleted\": false\n            },\n            \"employees\": [\n                {\n                    \"id\": 1,\n                    \"passport_number\": \"ZZ1234567\",\n                    \"first_name\": \"Employee1 First Name\",\n                    \"last_name\": \"Employee1 Last Name\",\n                    \"middle_name\": \"Employee1 Middle Name\",\n                    \"address\": \"123 Main St\",\n                    \"phone_number\": \"998993397707\",\n                    \"company_id\": 1,\n                    \"created_at\": \"2025-04-16 12:46:02\",\n                    \"updated_at\": \"2025-04-16 12:46:02\",\n                    \"is_deleted\": false\n                }\n            ]\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Company B\",\n            \"director_id\": 3,\n            \"address\": \"123 Main St\",\n            \"website\": \"www.companya.com\",\n            \"phone_number\": \"998993397707\",\n            \"created_at\": \"2025-04-16 12:46:02\",\n            \"updated_at\": \"2025-04-16 12:46:02\",\n            \"is_deleted\": false,\n            \"director\": {\n                \"id\": 3,\n                \"email\": \"company2@local.host\",\n                \"type\": \"company\",\n                \"created_at\": \"2025-04-16 12:46:02\",\n                \"updated_at\": \"2025-04-16 12:46:02\",\n                \"is_deleted\": false\n            },\n            \"employees\": [\n                {\n                    \"id\": 2,\n                    \"passport_number\": \"ZZ1234567\",\n                    \"first_name\": \"Employee1 First Name\",\n                    \"last_name\": \"Employee1 Last Name\",\n                    \"middle_name\": \"Employee1 Middle Name\",\n                    \"address\": \"123 Main St\",\n                    \"phone_number\": \"998993397707\",\n                    \"company_id\": 2,\n                    \"created_at\": \"2025-04-16 12:46:02\",\n                    \"updated_at\": \"2025-04-16 12:46:02\",\n                    \"is_deleted\": false\n                }\n            ]\n        }\n    ],\n    \"links\": {\n        \"first\": \"http://localhost/admin/company/companies?page=1\",\n        \"last\": \"http://localhost/admin/company/companies?page=1\",\n        \"prev\": null,\n        \"next\": null\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 1,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost/admin/company/companies?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://localhost/admin/company/companies\",\n        \"per_page\": 20,\n        \"to\": 2,\n        \"total\": 2\n    }\n}",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/admin/company/companies?with%5B0%5D=director&with%5B1%5D=employees",
+                                                    "path": [
+                                                        "admin",
+                                                        "company",
+                                                        "companies"
+                                                    ],
+                                                    "query": {
+                                                        "with[0]": {
+                                                            "key": "with[0]",
+                                                            "value": "director"
+                                                        },
+                                                        "with[1]": {
+                                                            "key": "with[1]",
+                                                            "value": "employees"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Show with deleted",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9995"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Company A\",\n            \"director_id\": 2,\n            \"address\": \"123 Main St\",\n            \"website\": \"www.companya.com\",\n            \"phone_number\": \"998993397707\",\n            \"created_at\": \"2025-04-16 12:46:02\",\n            \"updated_at\": \"2025-04-16 12:46:02\",\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Company B\",\n            \"director_id\": 3,\n            \"address\": \"123 Main St\",\n            \"website\": \"www.companya.com\",\n            \"phone_number\": \"998993397707\",\n            \"created_at\": \"2025-04-16 12:46:02\",\n            \"updated_at\": \"2025-04-16 12:46:02\",\n            \"is_deleted\": false\n        }\n    ],\n    \"links\": {\n        \"first\": \"http://localhost/admin/company/companies?page=1\",\n        \"last\": \"http://localhost/admin/company/companies?page=1\",\n        \"prev\": null,\n        \"next\": null\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 1,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost/admin/company/companies?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://localhost/admin/company/companies\",\n        \"per_page\": 20,\n        \"to\": 2,\n        \"total\": 2\n    }\n}",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/admin/company/companies?show%5B0%5D=with-deleted",
+                                                    "path": [
+                                                        "admin",
+                                                        "company",
+                                                        "companies"
+                                                    ],
+                                                    "query": {
+                                                        "show[0]": {
+                                                            "key": "show[0]",
+                                                            "value": "with-deleted"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Show only deleted",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9994"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Company A\",\n            \"director_id\": 2,\n            \"address\": \"123 Main St\",\n            \"website\": \"www.companya.com\",\n            \"phone_number\": \"998993397707\",\n            \"created_at\": \"2025-04-16 12:46:02\",\n            \"updated_at\": \"2025-04-16 12:46:02\",\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Company B\",\n            \"director_id\": 3,\n            \"address\": \"123 Main St\",\n            \"website\": \"www.companya.com\",\n            \"phone_number\": \"998993397707\",\n            \"created_at\": \"2025-04-16 12:46:02\",\n            \"updated_at\": \"2025-04-16 12:46:02\",\n            \"is_deleted\": false\n        }\n    ],\n    \"links\": {\n        \"first\": \"http://localhost/admin/company/companies?page=1\",\n        \"last\": \"http://localhost/admin/company/companies?page=1\",\n        \"prev\": null,\n        \"next\": null\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 1,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost/admin/company/companies?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://localhost/admin/company/companies\",\n        \"per_page\": 20,\n        \"to\": 2,\n        \"total\": 2\n    }\n}",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/admin/company/companies?show%5B0%5D=only-deleted",
+                                                    "path": [
+                                                        "admin",
+                                                        "company",
+                                                        "companies"
+                                                    ],
+                                                    "query": {
+                                                        "show[0]": {
+                                                            "key": "show[0]",
+                                                            "value": "only-deleted"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Pagination",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9993"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Company A\",\n            \"director_id\": 2,\n            \"address\": \"123 Main St\",\n            \"website\": \"www.companya.com\",\n            \"phone_number\": \"998993397707\",\n            \"created_at\": \"2025-04-16 12:46:02\",\n            \"updated_at\": \"2025-04-16 12:46:02\",\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Company B\",\n            \"director_id\": 3,\n            \"address\": \"123 Main St\",\n            \"website\": \"www.companya.com\",\n            \"phone_number\": \"998993397707\",\n            \"created_at\": \"2025-04-16 12:46:02\",\n            \"updated_at\": \"2025-04-16 12:46:02\",\n            \"is_deleted\": false\n        }\n    ],\n    \"links\": {\n        \"first\": \"http://localhost/admin/company/companies?page=1\",\n        \"last\": \"http://localhost/admin/company/companies?page=1\",\n        \"prev\": null,\n        \"next\": null\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 1,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost/admin/company/companies?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://localhost/admin/company/companies\",\n        \"per_page\": 20,\n        \"to\": 2,\n        \"total\": 2\n    }\n}",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/admin/company/companies?page-size=20&page=1",
+                                                    "path": [
+                                                        "admin",
+                                                        "company",
+                                                        "companies"
+                                                    ],
+                                                    "query": {
+                                                        "page-size": {
+                                                            "key": "page-size",
+                                                            "value": "20"
+                                                        },
+                                                        "page": {
+                                                            "key": "page",
+                                                            "value": "1"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Show Test",
+                                    "request": {
+                                        "method": "GET",
+                                        "body": {
+                                            "mode": "none"
+                                        },
+                                        "description": ""
+                                    },
+                                    "response": [
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Success",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9992"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"id\": 1,\n    \"name\": \"Company A\",\n    \"director_id\": 2,\n    \"address\": \"123 Main St\",\n    \"website\": \"www.companya.com\",\n    \"phone_number\": \"998993397707\",\n    \"created_at\": \"2025-04-16 12:46:02\",\n    \"updated_at\": \"2025-04-16 12:46:02\",\n    \"is_deleted\": false\n}",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/admin/company/companies/1",
+                                                    "path": [
+                                                        "admin",
+                                                        "company",
+                                                        "companies",
+                                                        "1"
+                                                    ],
+                                                    "query": []
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Store Test",
+                                    "request": {
+                                        "method": "POST",
+                                        "body": {
+                                            "mode": "none"
+                                        },
+                                        "description": ""
+                                    },
+                                    "response": [
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Success",
+                                            "status": "Created",
+                                            "code": 201,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9991"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"name\": \"company c1\",\n    \"address\": \"123 str\",\n    \"website\": \"test.company.com\",\n    \"phone_number\": \"993339922\",\n    \"director_id\": 4,\n    \"updated_at\": \"2025-04-16 12:46:03\",\n    \"created_at\": \"2025-04-16 12:46:03\",\n    \"id\": 3,\n    \"is_deleted\": false,\n    \"director\": {\n        \"email\": \"director13@local.host\",\n        \"type\": \"company\",\n        \"updated_at\": \"2025-04-16 12:46:03\",\n        \"created_at\": \"2025-04-16 12:46:03\",\n        \"id\": 4,\n        \"is_deleted\": false\n    }\n}",
+                                            "originalRequest": {
+                                                "method": "POST",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "{\n    \"name\": \"company c1\",\n    \"address\": \"123 str\",\n    \"website\": \"test.company.com\",\n    \"phone_number\": \"993339922\",\n    \"director\": {\n        \"email\": \"director13@local.host\",\n        \"password\": \"test123\"\n    }\n}"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/admin/company/companies",
+                                                    "path": [
+                                                        "admin",
+                                                        "company",
+                                                        "companies"
+                                                    ],
+                                                    "query": []
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Update Test",
+                                    "request": {
+                                        "method": "POST",
+                                        "body": {
+                                            "mode": "none"
+                                        },
+                                        "description": ""
+                                    },
+                                    "response": [
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Success",
+                                            "status": "Created",
+                                            "code": 201,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9990"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"id\": 2,\n    \"name\": \"company c1\",\n    \"director_id\": 3,\n    \"address\": \"123 str\",\n    \"website\": \"test.company.com\",\n    \"phone_number\": \"993339922\",\n    \"created_at\": \"2025-04-16 12:46:02\",\n    \"updated_at\": \"2025-04-16 12:46:03\",\n    \"is_deleted\": false,\n    \"director\": {\n        \"id\": 3,\n        \"email\": \"director13@local.host\",\n        \"type\": \"company\",\n        \"created_at\": \"2025-04-16 12:46:02\",\n        \"updated_at\": \"2025-04-16 12:46:03\",\n        \"is_deleted\": false\n    }\n}",
+                                            "originalRequest": {
+                                                "method": "POST",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "{\n    \"name\": \"company c1\",\n    \"address\": \"123 str\",\n    \"website\": \"test.company.com\",\n    \"phone_number\": \"993339922\",\n    \"director\": {\n        \"email\": \"director13@local.host\",\n        \"password\": \"test123\"\n    }\n}"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/admin/company/companies/2?_method=PUT",
+                                                    "path": [
+                                                        "admin",
+                                                        "company",
+                                                        "companies",
+                                                        "2"
+                                                    ],
+                                                    "query": {
+                                                        "_method": {
+                                                            "key": "_method",
+                                                            "value": "PUT"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Employee",
+                    "item": [
+                        {
+                            "name": "Employee",
+                            "item": [
+                                {
+                                    "name": "Index Test",
+                                    "request": {
+                                        "method": "GET",
+                                        "body": {
+                                            "mode": "none"
+                                        },
+                                        "description": ""
+                                    },
+                                    "response": [
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Filters",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9989"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Company A\",\n            \"director_id\": 2,\n            \"address\": \"123 Main St\",\n            \"website\": \"www.companya.com\",\n            \"phone_number\": \"998993397707\",\n            \"created_at\": \"2025-04-16 12:46:02\",\n            \"updated_at\": \"2025-04-16 12:46:02\",\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Company B\",\n            \"director_id\": 3,\n            \"address\": \"123 Main St\",\n            \"website\": \"www.companya.com\",\n            \"phone_number\": \"998993397707\",\n            \"created_at\": \"2025-04-16 12:46:02\",\n            \"updated_at\": \"2025-04-16 12:46:02\",\n            \"is_deleted\": false\n        }\n    ],\n    \"links\": {\n        \"first\": \"http://localhost/admin/company/companies?page=1\",\n        \"last\": \"http://localhost/admin/company/companies?page=1\",\n        \"prev\": null,\n        \"next\": null\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 1,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost/admin/company/companies?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://localhost/admin/company/companies\",\n        \"per_page\": 20,\n        \"to\": 2,\n        \"total\": 2\n    }\n}",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/admin/company/companies?filter%5Bsearch%5D=company",
+                                                    "path": [
+                                                        "admin",
+                                                        "company",
+                                                        "companies"
+                                                    ],
+                                                    "query": {
+                                                        "filter[search]": {
+                                                            "key": "filter[search]",
+                                                            "value": "company"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Available relations",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9988"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Company A\",\n            \"director_id\": 2,\n            \"address\": \"123 Main St\",\n            \"website\": \"www.companya.com\",\n            \"phone_number\": \"998993397707\",\n            \"created_at\": \"2025-04-16 12:46:02\",\n            \"updated_at\": \"2025-04-16 12:46:02\",\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Company B\",\n            \"director_id\": 3,\n            \"address\": \"123 Main St\",\n            \"website\": \"www.companya.com\",\n            \"phone_number\": \"998993397707\",\n            \"created_at\": \"2025-04-16 12:46:02\",\n            \"updated_at\": \"2025-04-16 12:46:02\",\n            \"is_deleted\": false\n        }\n    ],\n    \"links\": {\n        \"first\": \"http://localhost/admin/company/companies?page=1\",\n        \"last\": \"http://localhost/admin/company/companies?page=1\",\n        \"prev\": null,\n        \"next\": null\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 1,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost/admin/company/companies?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://localhost/admin/company/companies\",\n        \"per_page\": 20,\n        \"to\": 2,\n        \"total\": 2\n    }\n}",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/admin/company/companies?with%5B0%5D=company",
+                                                    "path": [
+                                                        "admin",
+                                                        "company",
+                                                        "companies"
+                                                    ],
+                                                    "query": {
+                                                        "with[0]": {
+                                                            "key": "with[0]",
+                                                            "value": "company"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Show with deleted",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9987"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Company A\",\n            \"director_id\": 2,\n            \"address\": \"123 Main St\",\n            \"website\": \"www.companya.com\",\n            \"phone_number\": \"998993397707\",\n            \"created_at\": \"2025-04-16 12:46:02\",\n            \"updated_at\": \"2025-04-16 12:46:02\",\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Company B\",\n            \"director_id\": 3,\n            \"address\": \"123 Main St\",\n            \"website\": \"www.companya.com\",\n            \"phone_number\": \"998993397707\",\n            \"created_at\": \"2025-04-16 12:46:02\",\n            \"updated_at\": \"2025-04-16 12:46:02\",\n            \"is_deleted\": false\n        }\n    ],\n    \"links\": {\n        \"first\": \"http://localhost/admin/company/companies?page=1\",\n        \"last\": \"http://localhost/admin/company/companies?page=1\",\n        \"prev\": null,\n        \"next\": null\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 1,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost/admin/company/companies?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://localhost/admin/company/companies\",\n        \"per_page\": 20,\n        \"to\": 2,\n        \"total\": 2\n    }\n}",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/admin/company/companies?show%5B0%5D=with-deleted",
+                                                    "path": [
+                                                        "admin",
+                                                        "company",
+                                                        "companies"
+                                                    ],
+                                                    "query": {
+                                                        "show[0]": {
+                                                            "key": "show[0]",
+                                                            "value": "with-deleted"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Show only deleted",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9986"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Company A\",\n            \"director_id\": 2,\n            \"address\": \"123 Main St\",\n            \"website\": \"www.companya.com\",\n            \"phone_number\": \"998993397707\",\n            \"created_at\": \"2025-04-16 12:46:02\",\n            \"updated_at\": \"2025-04-16 12:46:02\",\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Company B\",\n            \"director_id\": 3,\n            \"address\": \"123 Main St\",\n            \"website\": \"www.companya.com\",\n            \"phone_number\": \"998993397707\",\n            \"created_at\": \"2025-04-16 12:46:02\",\n            \"updated_at\": \"2025-04-16 12:46:02\",\n            \"is_deleted\": false\n        }\n    ],\n    \"links\": {\n        \"first\": \"http://localhost/admin/company/companies?page=1\",\n        \"last\": \"http://localhost/admin/company/companies?page=1\",\n        \"prev\": null,\n        \"next\": null\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 1,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost/admin/company/companies?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://localhost/admin/company/companies\",\n        \"per_page\": 20,\n        \"to\": 2,\n        \"total\": 2\n    }\n}",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/admin/company/companies?show%5B0%5D=only-deleted",
+                                                    "path": [
+                                                        "admin",
+                                                        "company",
+                                                        "companies"
+                                                    ],
+                                                    "query": {
+                                                        "show[0]": {
+                                                            "key": "show[0]",
+                                                            "value": "only-deleted"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Pagination",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9985"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Company A\",\n            \"director_id\": 2,\n            \"address\": \"123 Main St\",\n            \"website\": \"www.companya.com\",\n            \"phone_number\": \"998993397707\",\n            \"created_at\": \"2025-04-16 12:46:02\",\n            \"updated_at\": \"2025-04-16 12:46:02\",\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Company B\",\n            \"director_id\": 3,\n            \"address\": \"123 Main St\",\n            \"website\": \"www.companya.com\",\n            \"phone_number\": \"998993397707\",\n            \"created_at\": \"2025-04-16 12:46:02\",\n            \"updated_at\": \"2025-04-16 12:46:02\",\n            \"is_deleted\": false\n        }\n    ],\n    \"links\": {\n        \"first\": \"http://localhost/admin/company/companies?page=1\",\n        \"last\": \"http://localhost/admin/company/companies?page=1\",\n        \"prev\": null,\n        \"next\": null\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 1,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost/admin/company/companies?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://localhost/admin/company/companies\",\n        \"per_page\": 20,\n        \"to\": 2,\n        \"total\": 2\n    }\n}",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/admin/company/companies?page-size=20&page=1",
+                                                    "path": [
+                                                        "admin",
+                                                        "company",
+                                                        "companies"
+                                                    ],
+                                                    "query": {
+                                                        "page-size": {
+                                                            "key": "page-size",
+                                                            "value": "20"
+                                                        },
+                                                        "page": {
+                                                            "key": "page",
+                                                            "value": "1"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Show Test",
+                                    "request": {
+                                        "method": "GET",
+                                        "body": {
+                                            "mode": "none"
+                                        },
+                                        "description": ""
+                                    },
+                                    "response": [
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Success",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9984"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"id\": 1,\n    \"name\": \"Company A\",\n    \"director_id\": 2,\n    \"address\": \"123 Main St\",\n    \"website\": \"www.companya.com\",\n    \"phone_number\": \"998993397707\",\n    \"created_at\": \"2025-04-16 12:46:02\",\n    \"updated_at\": \"2025-04-16 12:46:02\",\n    \"is_deleted\": false\n}",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/admin/company/companies/1",
+                                                    "path": [
+                                                        "admin",
+                                                        "company",
+                                                        "companies",
+                                                        "1"
+                                                    ],
+                                                    "query": []
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Company",
+            "item": [
+                {
+                    "name": "Company",
+                    "item": [
+                        {
+                            "name": "Company",
+                            "item": [
+                                {
+                                    "name": "Get Company Test",
+                                    "request": {
+                                        "method": "GET",
+                                        "body": {
+                                            "mode": "none"
+                                        },
+                                        "description": ""
+                                    },
+                                    "response": [
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Success",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9999"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"id\": 1,\n    \"name\": \"Company A\",\n    \"director_id\": 2,\n    \"address\": \"123 Main St\",\n    \"website\": \"www.companya.com\",\n    \"phone_number\": \"998993397707\",\n    \"created_at\": \"2025-04-16 12:46:02\",\n    \"updated_at\": \"2025-04-16 12:46:02\",\n    \"is_deleted\": false\n}",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/company/company/companies/get-company",
+                                                    "path": [
+                                                        "company",
+                                                        "company",
+                                                        "companies",
+                                                        "get-company"
+                                                    ],
+                                                    "query": []
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Update Test",
+                                    "request": {
+                                        "method": "POST",
+                                        "body": {
+                                            "mode": "none"
+                                        },
+                                        "description": ""
+                                    },
+                                    "response": [
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Success",
+                                            "status": "Created",
+                                            "code": 201,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9998"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"id\": 1,\n    \"name\": \"company c1\",\n    \"director_id\": 2,\n    \"address\": \"123 str\",\n    \"website\": \"test.company.com\",\n    \"phone_number\": \"993339922\",\n    \"created_at\": \"2025-04-16 12:46:02\",\n    \"updated_at\": \"2025-04-16 12:46:03\",\n    \"is_deleted\": false,\n    \"director\": {\n        \"id\": 2,\n        \"email\": \"director13@local.host\",\n        \"type\": \"company\",\n        \"created_at\": \"2025-04-16 12:46:02\",\n        \"updated_at\": \"2025-04-16 12:46:03\",\n        \"is_deleted\": false\n    }\n}",
+                                            "originalRequest": {
+                                                "method": "POST",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "{\n    \"name\": \"company c1\",\n    \"address\": \"123 str\",\n    \"website\": \"test.company.com\",\n    \"phone_number\": \"993339922\",\n    \"director\": {\n        \"email\": \"director13@local.host\",\n        \"password\": \"test123\"\n    }\n}"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/company/company/companies/update-company?_method=PUT",
+                                                    "path": [
+                                                        "company",
+                                                        "company",
+                                                        "companies",
+                                                        "update-company"
+                                                    ],
+                                                    "query": {
+                                                        "_method": {
+                                                            "key": "_method",
+                                                            "value": "PUT"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Employee",
+                    "item": [
+                        {
+                            "name": "Employee",
+                            "item": [
+                                {
+                                    "name": "Delete Test",
+                                    "request": {
+                                        "method": "DELETE",
+                                        "body": {
+                                            "mode": "none"
+                                        },
+                                        "description": ""
+                                    },
+                                    "response": [
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Delete success",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9997"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"message\": \"Success\"\n}",
+                                            "originalRequest": {
+                                                "method": "DELETE",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/company/employee/employees/1",
+                                                    "path": [
+                                                        "company",
+                                                        "employee",
+                                                        "employees",
+                                                        "1"
+                                                    ],
+                                                    "query": []
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Restore success",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9996"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"message\": \"Success\"\n}",
+                                            "originalRequest": {
+                                                "method": "DELETE",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/company/employee/employees/1/restore",
+                                                    "path": [
+                                                        "company",
+                                                        "employee",
+                                                        "employees",
+                                                        "1",
+                                                        "restore"
+                                                    ],
+                                                    "query": []
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Index Test",
+                                    "request": {
+                                        "method": "GET",
+                                        "body": {
+                                            "mode": "none"
+                                        },
+                                        "description": ""
+                                    },
+                                    "response": [
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Filters",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9995"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"data\": [],\n    \"links\": {\n        \"first\": \"http://localhost/company/employee/employees?page=1\",\n        \"last\": \"http://localhost/company/employee/employees?page=1\",\n        \"prev\": null,\n        \"next\": null\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": null,\n        \"last_page\": 1,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost/company/employee/employees?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://localhost/company/employee/employees\",\n        \"per_page\": 20,\n        \"to\": null,\n        \"total\": 0\n    }\n}",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/company/employee/employees?filter%5Bname%5D=com&filter%5Baddress%5D=test&filter%5Bdirector_id%5D=1&filter%5Bwebsite%5D=test&filter%5Bsearch%5D=company",
+                                                    "path": [
+                                                        "company",
+                                                        "employee",
+                                                        "employees"
+                                                    ],
+                                                    "query": {
+                                                        "filter[name]": {
+                                                            "key": "filter[name]",
+                                                            "value": "com"
+                                                        },
+                                                        "filter[address]": {
+                                                            "key": "filter[address]",
+                                                            "value": "test"
+                                                        },
+                                                        "filter[director_id]": {
+                                                            "key": "filter[director_id]",
+                                                            "value": "1"
+                                                        },
+                                                        "filter[website]": {
+                                                            "key": "filter[website]",
+                                                            "value": "test"
+                                                        },
+                                                        "filter[search]": {
+                                                            "key": "filter[search]",
+                                                            "value": "company"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Available relations",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9994"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"passport_number\": \"ZZ1234567\",\n            \"first_name\": \"Employee1 First Name\",\n            \"last_name\": \"Employee1 Last Name\",\n            \"middle_name\": \"Employee1 Middle Name\",\n            \"address\": \"123 Main St\",\n            \"phone_number\": \"998993397707\",\n            \"company_id\": 1,\n            \"created_at\": \"2025-04-16 12:46:02\",\n            \"updated_at\": \"2025-04-16 12:46:02\",\n            \"is_deleted\": false,\n            \"company\": null\n        }\n    ],\n    \"links\": {\n        \"first\": \"http://localhost/company/employee/employees?page=1\",\n        \"last\": \"http://localhost/company/employee/employees?page=1\",\n        \"prev\": null,\n        \"next\": null\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 1,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost/company/employee/employees?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://localhost/company/employee/employees\",\n        \"per_page\": 20,\n        \"to\": 1,\n        \"total\": 1\n    }\n}",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/company/employee/employees?with%5B0%5D=company",
+                                                    "path": [
+                                                        "company",
+                                                        "employee",
+                                                        "employees"
+                                                    ],
+                                                    "query": {
+                                                        "with[0]": {
+                                                            "key": "with[0]",
+                                                            "value": "company"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Show with deleted",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9993"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"passport_number\": \"ZZ1234567\",\n            \"first_name\": \"Employee1 First Name\",\n            \"last_name\": \"Employee1 Last Name\",\n            \"middle_name\": \"Employee1 Middle Name\",\n            \"address\": \"123 Main St\",\n            \"phone_number\": \"998993397707\",\n            \"company_id\": 1,\n            \"created_at\": \"2025-04-16 12:46:02\",\n            \"updated_at\": \"2025-04-16 12:46:02\",\n            \"is_deleted\": false\n        }\n    ],\n    \"links\": {\n        \"first\": \"http://localhost/company/employee/employees?page=1\",\n        \"last\": \"http://localhost/company/employee/employees?page=1\",\n        \"prev\": null,\n        \"next\": null\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 1,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost/company/employee/employees?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://localhost/company/employee/employees\",\n        \"per_page\": 20,\n        \"to\": 1,\n        \"total\": 1\n    }\n}",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/company/employee/employees?show%5B0%5D=with-deleted",
+                                                    "path": [
+                                                        "company",
+                                                        "employee",
+                                                        "employees"
+                                                    ],
+                                                    "query": {
+                                                        "show[0]": {
+                                                            "key": "show[0]",
+                                                            "value": "with-deleted"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Show only deleted",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9992"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"passport_number\": \"ZZ1234567\",\n            \"first_name\": \"Employee1 First Name\",\n            \"last_name\": \"Employee1 Last Name\",\n            \"middle_name\": \"Employee1 Middle Name\",\n            \"address\": \"123 Main St\",\n            \"phone_number\": \"998993397707\",\n            \"company_id\": 1,\n            \"created_at\": \"2025-04-16 12:46:02\",\n            \"updated_at\": \"2025-04-16 12:46:02\",\n            \"is_deleted\": false\n        }\n    ],\n    \"links\": {\n        \"first\": \"http://localhost/company/employee/employees?page=1\",\n        \"last\": \"http://localhost/company/employee/employees?page=1\",\n        \"prev\": null,\n        \"next\": null\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 1,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost/company/employee/employees?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://localhost/company/employee/employees\",\n        \"per_page\": 20,\n        \"to\": 1,\n        \"total\": 1\n    }\n}",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/company/employee/employees?show%5B0%5D=only-deleted",
+                                                    "path": [
+                                                        "company",
+                                                        "employee",
+                                                        "employees"
+                                                    ],
+                                                    "query": {
+                                                        "show[0]": {
+                                                            "key": "show[0]",
+                                                            "value": "only-deleted"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Pagination",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9991"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"passport_number\": \"ZZ1234567\",\n            \"first_name\": \"Employee1 First Name\",\n            \"last_name\": \"Employee1 Last Name\",\n            \"middle_name\": \"Employee1 Middle Name\",\n            \"address\": \"123 Main St\",\n            \"phone_number\": \"998993397707\",\n            \"company_id\": 1,\n            \"created_at\": \"2025-04-16 12:46:02\",\n            \"updated_at\": \"2025-04-16 12:46:02\",\n            \"is_deleted\": false\n        }\n    ],\n    \"links\": {\n        \"first\": \"http://localhost/company/employee/employees?page=1\",\n        \"last\": \"http://localhost/company/employee/employees?page=1\",\n        \"prev\": null,\n        \"next\": null\n    },\n    \"meta\": {\n        \"current_page\": 1,\n        \"from\": 1,\n        \"last_page\": 1,\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost/company/employee/employees?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": null,\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"path\": \"http://localhost/company/employee/employees\",\n        \"per_page\": 20,\n        \"to\": 1,\n        \"total\": 1\n    }\n}",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/company/employee/employees?page-size=20&page=1",
+                                                    "path": [
+                                                        "company",
+                                                        "employee",
+                                                        "employees"
+                                                    ],
+                                                    "query": {
+                                                        "page-size": {
+                                                            "key": "page-size",
+                                                            "value": "20"
+                                                        },
+                                                        "page": {
+                                                            "key": "page",
+                                                            "value": "1"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Show Test",
+                                    "request": {
+                                        "method": "GET",
+                                        "body": {
+                                            "mode": "none"
+                                        },
+                                        "description": ""
+                                    },
+                                    "response": [
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Success",
+                                            "status": "OK",
+                                            "code": 200,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9990"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"id\": 1,\n    \"passport_number\": \"ZZ1234567\",\n    \"first_name\": \"Employee1 First Name\",\n    \"last_name\": \"Employee1 Last Name\",\n    \"middle_name\": \"Employee1 Middle Name\",\n    \"address\": \"123 Main St\",\n    \"phone_number\": \"998993397707\",\n    \"company_id\": 1,\n    \"created_at\": \"2025-04-16 12:46:02\",\n    \"updated_at\": \"2025-04-16 12:46:02\",\n    \"is_deleted\": false\n}",
+                                            "originalRequest": {
+                                                "method": "GET",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "[]"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/company/employee/employees/1",
+                                                    "path": [
+                                                        "company",
+                                                        "employee",
+                                                        "employees",
+                                                        "1"
+                                                    ],
+                                                    "query": []
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Store Test",
+                                    "request": {
+                                        "method": "POST",
+                                        "body": {
+                                            "mode": "none"
+                                        },
+                                        "description": ""
+                                    },
+                                    "response": [
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Success",
+                                            "status": "Created",
+                                            "code": 201,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9989"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"phone_number\": \"911383733\",\n    \"first_name\": \"first_name\",\n    \"last_name\": \"last_name\",\n    \"middle_name\": \"middle_name\",\n    \"address\": \"main str 22122\",\n    \"passport_number\": \"ZZ1234568\",\n    \"company_id\": 1,\n    \"updated_at\": \"2025-04-16 12:46:03\",\n    \"created_at\": \"2025-04-16 12:46:03\",\n    \"id\": 3,\n    \"is_deleted\": false\n}",
+                                            "originalRequest": {
+                                                "method": "POST",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "{\n    \"first_name\": \"first_name\",\n    \"last_name\": \"last_name\",\n    \"middle_name\": \"middle_name\",\n    \"address\": \"main str 22122\",\n    \"phone_number\": \"911383733\",\n    \"passport_number\": \"ZZ1234568\"\n}"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/company/employee/employees",
+                                                    "path": [
+                                                        "company",
+                                                        "employee",
+                                                        "employees"
+                                                    ],
+                                                    "query": []
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Update Test",
+                                    "request": {
+                                        "method": "POST",
+                                        "body": {
+                                            "mode": "none"
+                                        },
+                                        "description": ""
+                                    },
+                                    "response": [
+                                        {
+                                            "_postman_previewlanguage": "json",
+                                            "name": "Success",
+                                            "status": "Created",
+                                            "code": 201,
+                                            "header": {
+                                                "Cache-Control": {
+                                                    "key": "Cache-Control",
+                                                    "value": [
+                                                        "no-cache, private"
+                                                    ]
+                                                },
+                                                "Date": {
+                                                    "key": "Date",
+                                                    "value": [
+                                                        "Wed, 16 Apr 2025 12:46:03 GMT"
+                                                    ]
+                                                },
+                                                "Content-Type": {
+                                                    "key": "Content-Type",
+                                                    "value": [
+                                                        "application/json"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Limit": {
+                                                    "key": "X-RateLimit-Limit",
+                                                    "value": [
+                                                        "10000"
+                                                    ]
+                                                },
+                                                "X-RateLimit-Remaining": {
+                                                    "key": "X-RateLimit-Remaining",
+                                                    "value": [
+                                                        "9988"
+                                                    ]
+                                                }
+                                            },
+                                            "body": "{\n    \"id\": 1,\n    \"passport_number\": \"ZZ1234568\",\n    \"first_name\": \"first_name\",\n    \"last_name\": \"last_name\",\n    \"middle_name\": \"middle_name\",\n    \"address\": \"main str 22122\",\n    \"phone_number\": \"911383733\",\n    \"company_id\": 1,\n    \"created_at\": \"2025-04-16 12:46:02\",\n    \"updated_at\": \"2025-04-16 12:46:03\",\n    \"is_deleted\": false\n}",
+                                            "originalRequest": {
+                                                "method": "POST",
+                                                "header": {
+                                                    "Accept": {
+                                                        "key": "Accept",
+                                                        "value": "application/json"
+                                                    },
+                                                    "Accept-Language": {
+                                                        "key": "Accept-Language",
+                                                        "value": "en"
+                                                    },
+                                                    "Authorization": {
+                                                        "key": "Authorization",
+                                                        "value": "<TOKEN>"
+                                                    }
+                                                },
+                                                "body": {
+                                                    "mode": "raw",
+                                                    "raw": "{\n    \"first_name\": \"first_name\",\n    \"last_name\": \"last_name\",\n    \"middle_name\": \"middle_name\",\n    \"address\": \"main str 22122\",\n    \"phone_number\": \"911383733\",\n    \"passport_number\": \"ZZ1234568\"\n}"
+                                                },
+                                                "url": {
+                                                    "host": [
+                                                        "{{host}}"
+                                                    ],
+                                                    "raw": "{{host}}/company/employee/employees/1?_method=PUT",
+                                                    "path": [
+                                                        "company",
+                                                        "employee",
+                                                        "employees",
+                                                        "1"
+                                                    ],
+                                                    "query": {
+                                                        "_method": {
+                                                            "key": "_method",
+                                                            "value": "PUT"
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Common",
+            "item": [
+                {
+                    "name": "Auth",
+                    "item": [
+                        {
+                            "name": "Login Test",
+                            "request": {
+                                "method": "POST",
+                                "body": {
+                                    "mode": "none"
+                                },
+                                "description": "* This is a sample method.\n     *\n     * @return void\n     */"
+                            },
+                            "response": [
+                                {
+                                    "_postman_previewlanguage": "json",
+                                    "name": "Admin",
+                                    "status": "OK",
+                                    "code": 200,
+                                    "header": {
+                                        "Cache-Control": {
+                                            "key": "Cache-Control",
+                                            "value": [
+                                                "no-cache, private"
+                                            ]
+                                        },
+                                        "Date": {
+                                            "key": "Date",
+                                            "value": [
+                                                "Wed, 16 Apr 2025 12:46:04 GMT"
+                                            ]
+                                        },
+                                        "Content-Type": {
+                                            "key": "Content-Type",
+                                            "value": [
+                                                "application/json"
+                                            ]
+                                        },
+                                        "X-RateLimit-Limit": {
+                                            "key": "X-RateLimit-Limit",
+                                            "value": [
+                                                "10000"
+                                            ]
+                                        },
+                                        "X-RateLimit-Remaining": {
+                                            "key": "X-RateLimit-Remaining",
+                                            "value": [
+                                                "9996"
+                                            ]
+                                        }
+                                    },
+                                    "body": "{\n    \"token\": \"Bearer 1|Ppt3NA1aHu0cWm4JG4DDdRmdSu8xuZ3NPST8fXFE5ef24bf2\"\n}",
+                                    "originalRequest": {
+                                        "method": "POST",
+                                        "header": {
+                                            "Accept": {
+                                                "key": "Accept",
+                                                "value": "application/json"
+                                            },
+                                            "Accept-Language": {
+                                                "key": "Accept-Language",
+                                                "value": "en"
+                                            }
+                                        },
+                                        "body": {
+                                            "mode": "raw",
+                                            "raw": "{\n    \"email\": \"admin@local.host\",\n    \"password\": \"test123\"\n}"
+                                        },
+                                        "url": {
+                                            "host": [
+                                                "{{host}}"
+                                            ],
+                                            "raw": "{{host}}/common/auth/login",
+                                            "path": [
+                                                "common",
+                                                "auth",
+                                                "login"
+                                            ],
+                                            "query": []
+                                        }
+                                    }
+                                },
+                                {
+                                    "_postman_previewlanguage": "json",
+                                    "name": "Company",
+                                    "status": "OK",
+                                    "code": 200,
+                                    "header": {
+                                        "Cache-Control": {
+                                            "key": "Cache-Control",
+                                            "value": [
+                                                "no-cache, private"
+                                            ]
+                                        },
+                                        "Date": {
+                                            "key": "Date",
+                                            "value": [
+                                                "Wed, 16 Apr 2025 12:46:04 GMT"
+                                            ]
+                                        },
+                                        "Content-Type": {
+                                            "key": "Content-Type",
+                                            "value": [
+                                                "application/json"
+                                            ]
+                                        },
+                                        "X-RateLimit-Limit": {
+                                            "key": "X-RateLimit-Limit",
+                                            "value": [
+                                                "10000"
+                                            ]
+                                        },
+                                        "X-RateLimit-Remaining": {
+                                            "key": "X-RateLimit-Remaining",
+                                            "value": [
+                                                "9995"
+                                            ]
+                                        }
+                                    },
+                                    "body": "{\n    \"token\": \"Bearer 2|9tAbZEUMz9Xdyugim06ig53EpDPkzn2NaGK4d5Dq036f317e\"\n}",
+                                    "originalRequest": {
+                                        "method": "POST",
+                                        "header": {
+                                            "Accept": {
+                                                "key": "Accept",
+                                                "value": "application/json"
+                                            },
+                                            "Accept-Language": {
+                                                "key": "Accept-Language",
+                                                "value": "en"
+                                            }
+                                        },
+                                        "body": {
+                                            "mode": "raw",
+                                            "raw": "{\n    \"email\": \"company1@local.host\",\n    \"password\": \"test123\"\n}"
+                                        },
+                                        "url": {
+                                            "host": [
+                                                "{{host}}"
+                                            ],
+                                            "raw": "{{host}}/common/auth/login",
+                                            "path": [
+                                                "common",
+                                                "auth",
+                                                "login"
+                                            ],
+                                            "query": []
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

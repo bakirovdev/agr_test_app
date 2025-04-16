@@ -1,0 +1,2427 @@
+{
+    "Admin.Company.Company.DeleteTest.delete_success": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "DELETE",
+            "url": {
+                "path": "admin/company/companies/2",
+                "query": [],
+                "raw": "admin/company/companies/2"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9999"
+                ]
+            },
+            "body": {
+                "message": "Success"
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Admin.Company.Company.DeleteTest.restore_success": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "DELETE",
+            "url": {
+                "path": "admin/company/companies/2/restore",
+                "query": [],
+                "raw": "admin/company/companies/2/restore"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9998"
+                ]
+            },
+            "body": {
+                "message": "Success"
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Admin.Company.Company.IndexTest.filters": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "GET",
+            "url": {
+                "path": "admin/company/companies",
+                "query": {
+                    "filter[name]": "com",
+                    "filter[address]": "test",
+                    "filter[director_id]": "1",
+                    "filter[website]": "test",
+                    "filter[search]": "company"
+                },
+                "raw": "admin/company/companies?filter%5Bname%5D=com&filter%5Baddress%5D=test&filter%5Bdirector_id%5D=1&filter%5Bwebsite%5D=test&filter%5Bsearch%5D=company"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9997"
+                ]
+            },
+            "body": {
+                "data": [],
+                "links": {
+                    "first": "http://localhost/admin/company/companies?page=1",
+                    "last": "http://localhost/admin/company/companies?page=1",
+                    "prev": null,
+                    "next": null
+                },
+                "meta": {
+                    "current_page": 1,
+                    "from": null,
+                    "last_page": 1,
+                    "links": [
+                        {
+                            "url": null,
+                            "label": "&laquo; Previous",
+                            "active": false
+                        },
+                        {
+                            "url": "http://localhost/admin/company/companies?page=1",
+                            "label": "1",
+                            "active": true
+                        },
+                        {
+                            "url": null,
+                            "label": "Next &raquo;",
+                            "active": false
+                        }
+                    ],
+                    "path": "http://localhost/admin/company/companies",
+                    "per_page": 20,
+                    "to": null,
+                    "total": 0
+                }
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Admin.Company.Company.IndexTest.available_relations": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "GET",
+            "url": {
+                "path": "admin/company/companies",
+                "query": {
+                    "with[0]": "director",
+                    "with[1]": "employees"
+                },
+                "raw": "admin/company/companies?with%5B0%5D=director&with%5B1%5D=employees"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9996"
+                ]
+            },
+            "body": {
+                "data": [
+                    {
+                        "id": 1,
+                        "name": "Company A",
+                        "director_id": 2,
+                        "address": "123 Main St",
+                        "website": "www.companya.com",
+                        "phone_number": "998993397707",
+                        "created_at": "2025-04-16 12:48:40",
+                        "updated_at": "2025-04-16 12:48:40",
+                        "is_deleted": false,
+                        "director": {
+                            "id": 2,
+                            "email": "company1@local.host",
+                            "type": "company",
+                            "created_at": "2025-04-16 12:48:40",
+                            "updated_at": "2025-04-16 12:48:40",
+                            "is_deleted": false
+                        },
+                        "employees": [
+                            {
+                                "id": 1,
+                                "passport_number": "ZZ1234567",
+                                "first_name": "Employee1 First Name",
+                                "last_name": "Employee1 Last Name",
+                                "middle_name": "Employee1 Middle Name",
+                                "address": "123 Main St",
+                                "phone_number": "998993397707",
+                                "company_id": 1,
+                                "created_at": "2025-04-16 12:48:40",
+                                "updated_at": "2025-04-16 12:48:40",
+                                "is_deleted": false
+                            }
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "name": "Company B",
+                        "director_id": 3,
+                        "address": "123 Main St",
+                        "website": "www.companya.com",
+                        "phone_number": "998993397707",
+                        "created_at": "2025-04-16 12:48:40",
+                        "updated_at": "2025-04-16 12:48:40",
+                        "is_deleted": false,
+                        "director": {
+                            "id": 3,
+                            "email": "company2@local.host",
+                            "type": "company",
+                            "created_at": "2025-04-16 12:48:40",
+                            "updated_at": "2025-04-16 12:48:40",
+                            "is_deleted": false
+                        },
+                        "employees": [
+                            {
+                                "id": 2,
+                                "passport_number": "ZZ1234567",
+                                "first_name": "Employee1 First Name",
+                                "last_name": "Employee1 Last Name",
+                                "middle_name": "Employee1 Middle Name",
+                                "address": "123 Main St",
+                                "phone_number": "998993397707",
+                                "company_id": 2,
+                                "created_at": "2025-04-16 12:48:40",
+                                "updated_at": "2025-04-16 12:48:40",
+                                "is_deleted": false
+                            }
+                        ]
+                    }
+                ],
+                "links": {
+                    "first": "http://localhost/admin/company/companies?page=1",
+                    "last": "http://localhost/admin/company/companies?page=1",
+                    "prev": null,
+                    "next": null
+                },
+                "meta": {
+                    "current_page": 1,
+                    "from": 1,
+                    "last_page": 1,
+                    "links": [
+                        {
+                            "url": null,
+                            "label": "&laquo; Previous",
+                            "active": false
+                        },
+                        {
+                            "url": "http://localhost/admin/company/companies?page=1",
+                            "label": "1",
+                            "active": true
+                        },
+                        {
+                            "url": null,
+                            "label": "Next &raquo;",
+                            "active": false
+                        }
+                    ],
+                    "path": "http://localhost/admin/company/companies",
+                    "per_page": 20,
+                    "to": 2,
+                    "total": 2
+                }
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Admin.Company.Company.IndexTest.show_with_deleted": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "GET",
+            "url": {
+                "path": "admin/company/companies",
+                "query": {
+                    "show[0]": "with-deleted"
+                },
+                "raw": "admin/company/companies?show%5B0%5D=with-deleted"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9995"
+                ]
+            },
+            "body": {
+                "data": [
+                    {
+                        "id": 1,
+                        "name": "Company A",
+                        "director_id": 2,
+                        "address": "123 Main St",
+                        "website": "www.companya.com",
+                        "phone_number": "998993397707",
+                        "created_at": "2025-04-16 12:48:40",
+                        "updated_at": "2025-04-16 12:48:40",
+                        "is_deleted": false
+                    },
+                    {
+                        "id": 2,
+                        "name": "Company B",
+                        "director_id": 3,
+                        "address": "123 Main St",
+                        "website": "www.companya.com",
+                        "phone_number": "998993397707",
+                        "created_at": "2025-04-16 12:48:40",
+                        "updated_at": "2025-04-16 12:48:40",
+                        "is_deleted": false
+                    }
+                ],
+                "links": {
+                    "first": "http://localhost/admin/company/companies?page=1",
+                    "last": "http://localhost/admin/company/companies?page=1",
+                    "prev": null,
+                    "next": null
+                },
+                "meta": {
+                    "current_page": 1,
+                    "from": 1,
+                    "last_page": 1,
+                    "links": [
+                        {
+                            "url": null,
+                            "label": "&laquo; Previous",
+                            "active": false
+                        },
+                        {
+                            "url": "http://localhost/admin/company/companies?page=1",
+                            "label": "1",
+                            "active": true
+                        },
+                        {
+                            "url": null,
+                            "label": "Next &raquo;",
+                            "active": false
+                        }
+                    ],
+                    "path": "http://localhost/admin/company/companies",
+                    "per_page": 20,
+                    "to": 2,
+                    "total": 2
+                }
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Admin.Company.Company.IndexTest.show_only_deleted": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "GET",
+            "url": {
+                "path": "admin/company/companies",
+                "query": {
+                    "show[0]": "only-deleted"
+                },
+                "raw": "admin/company/companies?show%5B0%5D=only-deleted"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9994"
+                ]
+            },
+            "body": {
+                "data": [
+                    {
+                        "id": 1,
+                        "name": "Company A",
+                        "director_id": 2,
+                        "address": "123 Main St",
+                        "website": "www.companya.com",
+                        "phone_number": "998993397707",
+                        "created_at": "2025-04-16 12:48:40",
+                        "updated_at": "2025-04-16 12:48:40",
+                        "is_deleted": false
+                    },
+                    {
+                        "id": 2,
+                        "name": "Company B",
+                        "director_id": 3,
+                        "address": "123 Main St",
+                        "website": "www.companya.com",
+                        "phone_number": "998993397707",
+                        "created_at": "2025-04-16 12:48:40",
+                        "updated_at": "2025-04-16 12:48:40",
+                        "is_deleted": false
+                    }
+                ],
+                "links": {
+                    "first": "http://localhost/admin/company/companies?page=1",
+                    "last": "http://localhost/admin/company/companies?page=1",
+                    "prev": null,
+                    "next": null
+                },
+                "meta": {
+                    "current_page": 1,
+                    "from": 1,
+                    "last_page": 1,
+                    "links": [
+                        {
+                            "url": null,
+                            "label": "&laquo; Previous",
+                            "active": false
+                        },
+                        {
+                            "url": "http://localhost/admin/company/companies?page=1",
+                            "label": "1",
+                            "active": true
+                        },
+                        {
+                            "url": null,
+                            "label": "Next &raquo;",
+                            "active": false
+                        }
+                    ],
+                    "path": "http://localhost/admin/company/companies",
+                    "per_page": 20,
+                    "to": 2,
+                    "total": 2
+                }
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Admin.Company.Company.IndexTest.pagination": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "GET",
+            "url": {
+                "path": "admin/company/companies",
+                "query": {
+                    "page-size": "20",
+                    "page": "1"
+                },
+                "raw": "admin/company/companies?page-size=20&page=1"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9993"
+                ]
+            },
+            "body": {
+                "data": [
+                    {
+                        "id": 1,
+                        "name": "Company A",
+                        "director_id": 2,
+                        "address": "123 Main St",
+                        "website": "www.companya.com",
+                        "phone_number": "998993397707",
+                        "created_at": "2025-04-16 12:48:40",
+                        "updated_at": "2025-04-16 12:48:40",
+                        "is_deleted": false
+                    },
+                    {
+                        "id": 2,
+                        "name": "Company B",
+                        "director_id": 3,
+                        "address": "123 Main St",
+                        "website": "www.companya.com",
+                        "phone_number": "998993397707",
+                        "created_at": "2025-04-16 12:48:40",
+                        "updated_at": "2025-04-16 12:48:40",
+                        "is_deleted": false
+                    }
+                ],
+                "links": {
+                    "first": "http://localhost/admin/company/companies?page=1",
+                    "last": "http://localhost/admin/company/companies?page=1",
+                    "prev": null,
+                    "next": null
+                },
+                "meta": {
+                    "current_page": 1,
+                    "from": 1,
+                    "last_page": 1,
+                    "links": [
+                        {
+                            "url": null,
+                            "label": "&laquo; Previous",
+                            "active": false
+                        },
+                        {
+                            "url": "http://localhost/admin/company/companies?page=1",
+                            "label": "1",
+                            "active": true
+                        },
+                        {
+                            "url": null,
+                            "label": "Next &raquo;",
+                            "active": false
+                        }
+                    ],
+                    "path": "http://localhost/admin/company/companies",
+                    "per_page": 20,
+                    "to": 2,
+                    "total": 2
+                }
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Admin.Company.Company.ShowTest.success": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "GET",
+            "url": {
+                "path": "admin/company/companies/1",
+                "query": [],
+                "raw": "admin/company/companies/1"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9992"
+                ]
+            },
+            "body": {
+                "id": 1,
+                "name": "Company A",
+                "director_id": 2,
+                "address": "123 Main St",
+                "website": "www.companya.com",
+                "phone_number": "998993397707",
+                "created_at": "2025-04-16 12:48:40",
+                "updated_at": "2025-04-16 12:48:40",
+                "is_deleted": false
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Admin.Company.Company.StoreTest.success": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": {
+                    "name": "company c1",
+                    "address": "123 str",
+                    "website": "test.company.com",
+                    "phone_number": "993339922",
+                    "director": {
+                        "email": "director13@local.host",
+                        "password": "test123"
+                    }
+                }
+            },
+            "files": [],
+            "method": "POST",
+            "url": {
+                "path": "admin/company/companies",
+                "query": [],
+                "raw": "admin/company/companies"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9991"
+                ]
+            },
+            "body": {
+                "name": "company c1",
+                "address": "123 str",
+                "website": "test.company.com",
+                "phone_number": "993339922",
+                "director_id": 4,
+                "updated_at": "2025-04-16 12:48:41",
+                "created_at": "2025-04-16 12:48:41",
+                "id": 3,
+                "is_deleted": false,
+                "director": {
+                    "email": "director13@local.host",
+                    "type": "company",
+                    "updated_at": "2025-04-16 12:48:41",
+                    "created_at": "2025-04-16 12:48:41",
+                    "id": 4,
+                    "is_deleted": false
+                }
+            },
+            "status": {
+                "code": 201,
+                "text": "Created"
+            }
+        },
+        "comment": ""
+    },
+    "Admin.Company.Company.UpdateTest.success": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": {
+                    "name": "company c1",
+                    "address": "123 str",
+                    "website": "test.company.com",
+                    "phone_number": "993339922",
+                    "director": {
+                        "email": "director13@local.host",
+                        "password": "test123"
+                    }
+                }
+            },
+            "files": [],
+            "method": "POST",
+            "url": {
+                "path": "admin/company/companies/2",
+                "query": {
+                    "_method": "PUT"
+                },
+                "raw": "admin/company/companies/2?_method=PUT"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9990"
+                ]
+            },
+            "body": {
+                "id": 2,
+                "name": "company c1",
+                "director_id": 3,
+                "address": "123 str",
+                "website": "test.company.com",
+                "phone_number": "993339922",
+                "created_at": "2025-04-16 12:48:40",
+                "updated_at": "2025-04-16 12:48:41",
+                "is_deleted": false,
+                "director": {
+                    "id": 3,
+                    "email": "director13@local.host",
+                    "type": "company",
+                    "created_at": "2025-04-16 12:48:40",
+                    "updated_at": "2025-04-16 12:48:41",
+                    "is_deleted": false
+                }
+            },
+            "status": {
+                "code": 201,
+                "text": "Created"
+            }
+        },
+        "comment": ""
+    },
+    "Admin.Employee.Employee.IndexTest.filters": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "GET",
+            "url": {
+                "path": "admin/company/companies",
+                "query": {
+                    "filter[search]": "company"
+                },
+                "raw": "admin/company/companies?filter%5Bsearch%5D=company"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9989"
+                ]
+            },
+            "body": {
+                "data": [
+                    {
+                        "id": 1,
+                        "name": "Company A",
+                        "director_id": 2,
+                        "address": "123 Main St",
+                        "website": "www.companya.com",
+                        "phone_number": "998993397707",
+                        "created_at": "2025-04-16 12:48:40",
+                        "updated_at": "2025-04-16 12:48:40",
+                        "is_deleted": false
+                    },
+                    {
+                        "id": 2,
+                        "name": "Company B",
+                        "director_id": 3,
+                        "address": "123 Main St",
+                        "website": "www.companya.com",
+                        "phone_number": "998993397707",
+                        "created_at": "2025-04-16 12:48:40",
+                        "updated_at": "2025-04-16 12:48:40",
+                        "is_deleted": false
+                    }
+                ],
+                "links": {
+                    "first": "http://localhost/admin/company/companies?page=1",
+                    "last": "http://localhost/admin/company/companies?page=1",
+                    "prev": null,
+                    "next": null
+                },
+                "meta": {
+                    "current_page": 1,
+                    "from": 1,
+                    "last_page": 1,
+                    "links": [
+                        {
+                            "url": null,
+                            "label": "&laquo; Previous",
+                            "active": false
+                        },
+                        {
+                            "url": "http://localhost/admin/company/companies?page=1",
+                            "label": "1",
+                            "active": true
+                        },
+                        {
+                            "url": null,
+                            "label": "Next &raquo;",
+                            "active": false
+                        }
+                    ],
+                    "path": "http://localhost/admin/company/companies",
+                    "per_page": 20,
+                    "to": 2,
+                    "total": 2
+                }
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Admin.Employee.Employee.IndexTest.available_relations": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "GET",
+            "url": {
+                "path": "admin/company/companies",
+                "query": {
+                    "with[0]": "company"
+                },
+                "raw": "admin/company/companies?with%5B0%5D=company"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9988"
+                ]
+            },
+            "body": {
+                "data": [
+                    {
+                        "id": 1,
+                        "name": "Company A",
+                        "director_id": 2,
+                        "address": "123 Main St",
+                        "website": "www.companya.com",
+                        "phone_number": "998993397707",
+                        "created_at": "2025-04-16 12:48:40",
+                        "updated_at": "2025-04-16 12:48:40",
+                        "is_deleted": false
+                    },
+                    {
+                        "id": 2,
+                        "name": "Company B",
+                        "director_id": 3,
+                        "address": "123 Main St",
+                        "website": "www.companya.com",
+                        "phone_number": "998993397707",
+                        "created_at": "2025-04-16 12:48:40",
+                        "updated_at": "2025-04-16 12:48:40",
+                        "is_deleted": false
+                    }
+                ],
+                "links": {
+                    "first": "http://localhost/admin/company/companies?page=1",
+                    "last": "http://localhost/admin/company/companies?page=1",
+                    "prev": null,
+                    "next": null
+                },
+                "meta": {
+                    "current_page": 1,
+                    "from": 1,
+                    "last_page": 1,
+                    "links": [
+                        {
+                            "url": null,
+                            "label": "&laquo; Previous",
+                            "active": false
+                        },
+                        {
+                            "url": "http://localhost/admin/company/companies?page=1",
+                            "label": "1",
+                            "active": true
+                        },
+                        {
+                            "url": null,
+                            "label": "Next &raquo;",
+                            "active": false
+                        }
+                    ],
+                    "path": "http://localhost/admin/company/companies",
+                    "per_page": 20,
+                    "to": 2,
+                    "total": 2
+                }
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Admin.Employee.Employee.IndexTest.show_with_deleted": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "GET",
+            "url": {
+                "path": "admin/company/companies",
+                "query": {
+                    "show[0]": "with-deleted"
+                },
+                "raw": "admin/company/companies?show%5B0%5D=with-deleted"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9987"
+                ]
+            },
+            "body": {
+                "data": [
+                    {
+                        "id": 1,
+                        "name": "Company A",
+                        "director_id": 2,
+                        "address": "123 Main St",
+                        "website": "www.companya.com",
+                        "phone_number": "998993397707",
+                        "created_at": "2025-04-16 12:48:40",
+                        "updated_at": "2025-04-16 12:48:40",
+                        "is_deleted": false
+                    },
+                    {
+                        "id": 2,
+                        "name": "Company B",
+                        "director_id": 3,
+                        "address": "123 Main St",
+                        "website": "www.companya.com",
+                        "phone_number": "998993397707",
+                        "created_at": "2025-04-16 12:48:40",
+                        "updated_at": "2025-04-16 12:48:40",
+                        "is_deleted": false
+                    }
+                ],
+                "links": {
+                    "first": "http://localhost/admin/company/companies?page=1",
+                    "last": "http://localhost/admin/company/companies?page=1",
+                    "prev": null,
+                    "next": null
+                },
+                "meta": {
+                    "current_page": 1,
+                    "from": 1,
+                    "last_page": 1,
+                    "links": [
+                        {
+                            "url": null,
+                            "label": "&laquo; Previous",
+                            "active": false
+                        },
+                        {
+                            "url": "http://localhost/admin/company/companies?page=1",
+                            "label": "1",
+                            "active": true
+                        },
+                        {
+                            "url": null,
+                            "label": "Next &raquo;",
+                            "active": false
+                        }
+                    ],
+                    "path": "http://localhost/admin/company/companies",
+                    "per_page": 20,
+                    "to": 2,
+                    "total": 2
+                }
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Admin.Employee.Employee.IndexTest.show_only_deleted": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "GET",
+            "url": {
+                "path": "admin/company/companies",
+                "query": {
+                    "show[0]": "only-deleted"
+                },
+                "raw": "admin/company/companies?show%5B0%5D=only-deleted"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9986"
+                ]
+            },
+            "body": {
+                "data": [
+                    {
+                        "id": 1,
+                        "name": "Company A",
+                        "director_id": 2,
+                        "address": "123 Main St",
+                        "website": "www.companya.com",
+                        "phone_number": "998993397707",
+                        "created_at": "2025-04-16 12:48:40",
+                        "updated_at": "2025-04-16 12:48:40",
+                        "is_deleted": false
+                    },
+                    {
+                        "id": 2,
+                        "name": "Company B",
+                        "director_id": 3,
+                        "address": "123 Main St",
+                        "website": "www.companya.com",
+                        "phone_number": "998993397707",
+                        "created_at": "2025-04-16 12:48:40",
+                        "updated_at": "2025-04-16 12:48:40",
+                        "is_deleted": false
+                    }
+                ],
+                "links": {
+                    "first": "http://localhost/admin/company/companies?page=1",
+                    "last": "http://localhost/admin/company/companies?page=1",
+                    "prev": null,
+                    "next": null
+                },
+                "meta": {
+                    "current_page": 1,
+                    "from": 1,
+                    "last_page": 1,
+                    "links": [
+                        {
+                            "url": null,
+                            "label": "&laquo; Previous",
+                            "active": false
+                        },
+                        {
+                            "url": "http://localhost/admin/company/companies?page=1",
+                            "label": "1",
+                            "active": true
+                        },
+                        {
+                            "url": null,
+                            "label": "Next &raquo;",
+                            "active": false
+                        }
+                    ],
+                    "path": "http://localhost/admin/company/companies",
+                    "per_page": 20,
+                    "to": 2,
+                    "total": 2
+                }
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Admin.Employee.Employee.IndexTest.pagination": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "GET",
+            "url": {
+                "path": "admin/company/companies",
+                "query": {
+                    "page-size": "20",
+                    "page": "1"
+                },
+                "raw": "admin/company/companies?page-size=20&page=1"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9985"
+                ]
+            },
+            "body": {
+                "data": [
+                    {
+                        "id": 1,
+                        "name": "Company A",
+                        "director_id": 2,
+                        "address": "123 Main St",
+                        "website": "www.companya.com",
+                        "phone_number": "998993397707",
+                        "created_at": "2025-04-16 12:48:40",
+                        "updated_at": "2025-04-16 12:48:40",
+                        "is_deleted": false
+                    },
+                    {
+                        "id": 2,
+                        "name": "Company B",
+                        "director_id": 3,
+                        "address": "123 Main St",
+                        "website": "www.companya.com",
+                        "phone_number": "998993397707",
+                        "created_at": "2025-04-16 12:48:40",
+                        "updated_at": "2025-04-16 12:48:40",
+                        "is_deleted": false
+                    }
+                ],
+                "links": {
+                    "first": "http://localhost/admin/company/companies?page=1",
+                    "last": "http://localhost/admin/company/companies?page=1",
+                    "prev": null,
+                    "next": null
+                },
+                "meta": {
+                    "current_page": 1,
+                    "from": 1,
+                    "last_page": 1,
+                    "links": [
+                        {
+                            "url": null,
+                            "label": "&laquo; Previous",
+                            "active": false
+                        },
+                        {
+                            "url": "http://localhost/admin/company/companies?page=1",
+                            "label": "1",
+                            "active": true
+                        },
+                        {
+                            "url": null,
+                            "label": "Next &raquo;",
+                            "active": false
+                        }
+                    ],
+                    "path": "http://localhost/admin/company/companies",
+                    "per_page": 20,
+                    "to": 2,
+                    "total": 2
+                }
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Admin.Employee.Employee.ShowTest.success": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "GET",
+            "url": {
+                "path": "admin/company/companies/1",
+                "query": [],
+                "raw": "admin/company/companies/1"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9984"
+                ]
+            },
+            "body": {
+                "id": 1,
+                "name": "Company A",
+                "director_id": 2,
+                "address": "123 Main St",
+                "website": "www.companya.com",
+                "phone_number": "998993397707",
+                "created_at": "2025-04-16 12:48:40",
+                "updated_at": "2025-04-16 12:48:40",
+                "is_deleted": false
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Company.Company.Company.GetCompanyTest.success": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "GET",
+            "url": {
+                "path": "company/company/companies/get-company",
+                "query": [],
+                "raw": "company/company/companies/get-company"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9999"
+                ]
+            },
+            "body": {
+                "id": 1,
+                "name": "Company A",
+                "director_id": 2,
+                "address": "123 Main St",
+                "website": "www.companya.com",
+                "phone_number": "998993397707",
+                "created_at": "2025-04-16 12:48:40",
+                "updated_at": "2025-04-16 12:48:40",
+                "is_deleted": false
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Company.Company.Company.UpdateTest.success": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": {
+                    "name": "company c1",
+                    "address": "123 str",
+                    "website": "test.company.com",
+                    "phone_number": "993339922",
+                    "director": {
+                        "email": "director13@local.host",
+                        "password": "test123"
+                    }
+                }
+            },
+            "files": [],
+            "method": "POST",
+            "url": {
+                "path": "company/company/companies/update-company",
+                "query": {
+                    "_method": "PUT"
+                },
+                "raw": "company/company/companies/update-company?_method=PUT"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9998"
+                ]
+            },
+            "body": {
+                "id": 1,
+                "name": "company c1",
+                "director_id": 2,
+                "address": "123 str",
+                "website": "test.company.com",
+                "phone_number": "993339922",
+                "created_at": "2025-04-16 12:48:40",
+                "updated_at": "2025-04-16 12:48:41",
+                "is_deleted": false,
+                "director": {
+                    "id": 2,
+                    "email": "director13@local.host",
+                    "type": "company",
+                    "created_at": "2025-04-16 12:48:40",
+                    "updated_at": "2025-04-16 12:48:41",
+                    "is_deleted": false
+                }
+            },
+            "status": {
+                "code": 201,
+                "text": "Created"
+            }
+        },
+        "comment": ""
+    },
+    "Company.Employee.Employee.DeleteTest.delete_success": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "DELETE",
+            "url": {
+                "path": "company/employee/employees/1",
+                "query": [],
+                "raw": "company/employee/employees/1"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9997"
+                ]
+            },
+            "body": {
+                "message": "Success"
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Company.Employee.Employee.DeleteTest.restore_success": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "DELETE",
+            "url": {
+                "path": "company/employee/employees/1/restore",
+                "query": [],
+                "raw": "company/employee/employees/1/restore"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9996"
+                ]
+            },
+            "body": {
+                "message": "Success"
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Company.Employee.Employee.IndexTest.filters": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "GET",
+            "url": {
+                "path": "company/employee/employees",
+                "query": {
+                    "filter[name]": "com",
+                    "filter[address]": "test",
+                    "filter[director_id]": "1",
+                    "filter[website]": "test",
+                    "filter[search]": "company"
+                },
+                "raw": "company/employee/employees?filter%5Bname%5D=com&filter%5Baddress%5D=test&filter%5Bdirector_id%5D=1&filter%5Bwebsite%5D=test&filter%5Bsearch%5D=company"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9995"
+                ]
+            },
+            "body": {
+                "data": [],
+                "links": {
+                    "first": "http://localhost/company/employee/employees?page=1",
+                    "last": "http://localhost/company/employee/employees?page=1",
+                    "prev": null,
+                    "next": null
+                },
+                "meta": {
+                    "current_page": 1,
+                    "from": null,
+                    "last_page": 1,
+                    "links": [
+                        {
+                            "url": null,
+                            "label": "&laquo; Previous",
+                            "active": false
+                        },
+                        {
+                            "url": "http://localhost/company/employee/employees?page=1",
+                            "label": "1",
+                            "active": true
+                        },
+                        {
+                            "url": null,
+                            "label": "Next &raquo;",
+                            "active": false
+                        }
+                    ],
+                    "path": "http://localhost/company/employee/employees",
+                    "per_page": 20,
+                    "to": null,
+                    "total": 0
+                }
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Company.Employee.Employee.IndexTest.available_relations": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "GET",
+            "url": {
+                "path": "company/employee/employees",
+                "query": {
+                    "with[0]": "company"
+                },
+                "raw": "company/employee/employees?with%5B0%5D=company"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9994"
+                ]
+            },
+            "body": {
+                "data": [
+                    {
+                        "id": 1,
+                        "passport_number": "ZZ1234567",
+                        "first_name": "Employee1 First Name",
+                        "last_name": "Employee1 Last Name",
+                        "middle_name": "Employee1 Middle Name",
+                        "address": "123 Main St",
+                        "phone_number": "998993397707",
+                        "company_id": 1,
+                        "created_at": "2025-04-16 12:48:40",
+                        "updated_at": "2025-04-16 12:48:40",
+                        "is_deleted": false,
+                        "company": null
+                    }
+                ],
+                "links": {
+                    "first": "http://localhost/company/employee/employees?page=1",
+                    "last": "http://localhost/company/employee/employees?page=1",
+                    "prev": null,
+                    "next": null
+                },
+                "meta": {
+                    "current_page": 1,
+                    "from": 1,
+                    "last_page": 1,
+                    "links": [
+                        {
+                            "url": null,
+                            "label": "&laquo; Previous",
+                            "active": false
+                        },
+                        {
+                            "url": "http://localhost/company/employee/employees?page=1",
+                            "label": "1",
+                            "active": true
+                        },
+                        {
+                            "url": null,
+                            "label": "Next &raquo;",
+                            "active": false
+                        }
+                    ],
+                    "path": "http://localhost/company/employee/employees",
+                    "per_page": 20,
+                    "to": 1,
+                    "total": 1
+                }
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Company.Employee.Employee.IndexTest.show_with_deleted": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "GET",
+            "url": {
+                "path": "company/employee/employees",
+                "query": {
+                    "show[0]": "with-deleted"
+                },
+                "raw": "company/employee/employees?show%5B0%5D=with-deleted"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9993"
+                ]
+            },
+            "body": {
+                "data": [
+                    {
+                        "id": 1,
+                        "passport_number": "ZZ1234567",
+                        "first_name": "Employee1 First Name",
+                        "last_name": "Employee1 Last Name",
+                        "middle_name": "Employee1 Middle Name",
+                        "address": "123 Main St",
+                        "phone_number": "998993397707",
+                        "company_id": 1,
+                        "created_at": "2025-04-16 12:48:40",
+                        "updated_at": "2025-04-16 12:48:40",
+                        "is_deleted": false
+                    }
+                ],
+                "links": {
+                    "first": "http://localhost/company/employee/employees?page=1",
+                    "last": "http://localhost/company/employee/employees?page=1",
+                    "prev": null,
+                    "next": null
+                },
+                "meta": {
+                    "current_page": 1,
+                    "from": 1,
+                    "last_page": 1,
+                    "links": [
+                        {
+                            "url": null,
+                            "label": "&laquo; Previous",
+                            "active": false
+                        },
+                        {
+                            "url": "http://localhost/company/employee/employees?page=1",
+                            "label": "1",
+                            "active": true
+                        },
+                        {
+                            "url": null,
+                            "label": "Next &raquo;",
+                            "active": false
+                        }
+                    ],
+                    "path": "http://localhost/company/employee/employees",
+                    "per_page": 20,
+                    "to": 1,
+                    "total": 1
+                }
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Company.Employee.Employee.IndexTest.show_only_deleted": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "GET",
+            "url": {
+                "path": "company/employee/employees",
+                "query": {
+                    "show[0]": "only-deleted"
+                },
+                "raw": "company/employee/employees?show%5B0%5D=only-deleted"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9992"
+                ]
+            },
+            "body": {
+                "data": [
+                    {
+                        "id": 1,
+                        "passport_number": "ZZ1234567",
+                        "first_name": "Employee1 First Name",
+                        "last_name": "Employee1 Last Name",
+                        "middle_name": "Employee1 Middle Name",
+                        "address": "123 Main St",
+                        "phone_number": "998993397707",
+                        "company_id": 1,
+                        "created_at": "2025-04-16 12:48:40",
+                        "updated_at": "2025-04-16 12:48:40",
+                        "is_deleted": false
+                    }
+                ],
+                "links": {
+                    "first": "http://localhost/company/employee/employees?page=1",
+                    "last": "http://localhost/company/employee/employees?page=1",
+                    "prev": null,
+                    "next": null
+                },
+                "meta": {
+                    "current_page": 1,
+                    "from": 1,
+                    "last_page": 1,
+                    "links": [
+                        {
+                            "url": null,
+                            "label": "&laquo; Previous",
+                            "active": false
+                        },
+                        {
+                            "url": "http://localhost/company/employee/employees?page=1",
+                            "label": "1",
+                            "active": true
+                        },
+                        {
+                            "url": null,
+                            "label": "Next &raquo;",
+                            "active": false
+                        }
+                    ],
+                    "path": "http://localhost/company/employee/employees",
+                    "per_page": 20,
+                    "to": 1,
+                    "total": 1
+                }
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Company.Employee.Employee.IndexTest.pagination": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "GET",
+            "url": {
+                "path": "company/employee/employees",
+                "query": {
+                    "page-size": "20",
+                    "page": "1"
+                },
+                "raw": "company/employee/employees?page-size=20&page=1"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9991"
+                ]
+            },
+            "body": {
+                "data": [
+                    {
+                        "id": 1,
+                        "passport_number": "ZZ1234567",
+                        "first_name": "Employee1 First Name",
+                        "last_name": "Employee1 Last Name",
+                        "middle_name": "Employee1 Middle Name",
+                        "address": "123 Main St",
+                        "phone_number": "998993397707",
+                        "company_id": 1,
+                        "created_at": "2025-04-16 12:48:40",
+                        "updated_at": "2025-04-16 12:48:40",
+                        "is_deleted": false
+                    }
+                ],
+                "links": {
+                    "first": "http://localhost/company/employee/employees?page=1",
+                    "last": "http://localhost/company/employee/employees?page=1",
+                    "prev": null,
+                    "next": null
+                },
+                "meta": {
+                    "current_page": 1,
+                    "from": 1,
+                    "last_page": 1,
+                    "links": [
+                        {
+                            "url": null,
+                            "label": "&laquo; Previous",
+                            "active": false
+                        },
+                        {
+                            "url": "http://localhost/company/employee/employees?page=1",
+                            "label": "1",
+                            "active": true
+                        },
+                        {
+                            "url": null,
+                            "label": "Next &raquo;",
+                            "active": false
+                        }
+                    ],
+                    "path": "http://localhost/company/employee/employees",
+                    "per_page": 20,
+                    "to": 1,
+                    "total": 1
+                }
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Company.Employee.Employee.ShowTest.success": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": []
+            },
+            "files": [],
+            "method": "GET",
+            "url": {
+                "path": "company/employee/employees/1",
+                "query": [],
+                "raw": "company/employee/employees/1"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9990"
+                ]
+            },
+            "body": {
+                "id": 1,
+                "passport_number": "ZZ1234567",
+                "first_name": "Employee1 First Name",
+                "last_name": "Employee1 Last Name",
+                "middle_name": "Employee1 Middle Name",
+                "address": "123 Main St",
+                "phone_number": "998993397707",
+                "company_id": 1,
+                "created_at": "2025-04-16 12:48:40",
+                "updated_at": "2025-04-16 12:48:40",
+                "is_deleted": false
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": ""
+    },
+    "Company.Employee.Employee.StoreTest.success": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": {
+                    "first_name": "first_name",
+                    "last_name": "last_name",
+                    "middle_name": "middle_name",
+                    "address": "main str 22122",
+                    "phone_number": "911383733",
+                    "passport_number": "ZZ1234568"
+                }
+            },
+            "files": [],
+            "method": "POST",
+            "url": {
+                "path": "company/employee/employees",
+                "query": [],
+                "raw": "company/employee/employees"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9989"
+                ]
+            },
+            "body": {
+                "phone_number": "911383733",
+                "first_name": "first_name",
+                "last_name": "last_name",
+                "middle_name": "middle_name",
+                "address": "main str 22122",
+                "passport_number": "ZZ1234568",
+                "company_id": 1,
+                "updated_at": "2025-04-16 12:48:41",
+                "created_at": "2025-04-16 12:48:41",
+                "id": 3,
+                "is_deleted": false
+            },
+            "status": {
+                "code": 201,
+                "text": "Created"
+            }
+        },
+        "comment": ""
+    },
+    "Company.Employee.Employee.UpdateTest.success": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en",
+                "Authorization": "<TOKEN>"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": {
+                    "first_name": "first_name",
+                    "last_name": "last_name",
+                    "middle_name": "middle_name",
+                    "address": "main str 22122",
+                    "phone_number": "911383733",
+                    "passport_number": "ZZ1234568"
+                }
+            },
+            "files": [],
+            "method": "POST",
+            "url": {
+                "path": "company/employee/employees/1",
+                "query": {
+                    "_method": "PUT"
+                },
+                "raw": "company/employee/employees/1?_method=PUT"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:41 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9988"
+                ]
+            },
+            "body": {
+                "id": 1,
+                "passport_number": "ZZ1234568",
+                "first_name": "first_name",
+                "last_name": "last_name",
+                "middle_name": "middle_name",
+                "address": "main str 22122",
+                "phone_number": "911383733",
+                "company_id": 1,
+                "created_at": "2025-04-16 12:48:40",
+                "updated_at": "2025-04-16 12:48:41",
+                "is_deleted": false
+            },
+            "status": {
+                "code": 201,
+                "text": "Created"
+            }
+        },
+        "comment": ""
+    },
+    "Common.Auth.LoginTest.admin": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": {
+                    "email": "admin@local.host",
+                    "password": "test123"
+                }
+            },
+            "files": [],
+            "method": "POST",
+            "url": {
+                "path": "common/auth/login",
+                "query": [],
+                "raw": "common/auth/login"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:42 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9999"
+                ]
+            },
+            "body": {
+                "token": "Bearer 1|1BQR14mGNatcDeN2vrjIM77k7ODgDQJEVHeBeZVS4f001f55"
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": "* This is a sample method.\n     *\n     * @return void\n     */"
+    },
+    "Common.Auth.LoginTest.company": {
+        "is_request": true,
+        "request": {
+            "headers": {
+                "Accept": "application/json",
+                "Accept-Language": "en"
+            },
+            "body": {
+                "mode": "raw",
+                "raw": {
+                    "email": "company1@local.host",
+                    "password": "test123"
+                }
+            },
+            "files": [],
+            "method": "POST",
+            "url": {
+                "path": "common/auth/login",
+                "query": [],
+                "raw": "common/auth/login"
+            }
+        },
+        "response": {
+            "headers": {
+                "Cache-Control": [
+                    "no-cache, private"
+                ],
+                "Date": [
+                    "Wed, 16 Apr 2025 12:48:42 GMT"
+                ],
+                "Content-Type": [
+                    "application/json"
+                ],
+                "X-RateLimit-Limit": [
+                    "10000"
+                ],
+                "X-RateLimit-Remaining": [
+                    "9998"
+                ]
+            },
+            "body": {
+                "token": "Bearer 2|Hz8DuPnNYXsC7X4eVh3a1Nduv8HphWfx7GguaPbmd99bb84c"
+            },
+            "status": {
+                "code": 200,
+                "text": "OK"
+            }
+        },
+        "comment": "* This is a sample method.\n     *\n     * @return void\n     */"
+    }
+}
