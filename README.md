@@ -21,6 +21,10 @@ php artisan protokit:migrate
 ```
 php artisan telescope:install
 ```
+8. Run all tests
+```
+php artisan protokit:test
+```
 
 
 ## Folders structure
